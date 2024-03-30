@@ -1,0 +1,160 @@
+#contact{
+    margin-bottom: 50px;
+    .container{
+        h2{
+            color: var(--main-font, #363738);
+            font-family: Exo2;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 125%; /* 60px */
+            margin-bottom: 94px;
+        }
+
+        .contact-wrapper{
+            display: flex;
+            justify-content: space-between;
+            .contact-left{
+                div{
+                    margin-bottom: 44px;
+                    display: flex;
+                    gap: 35px;
+                    align-items: center;
+
+                    div{
+                        margin-bottom: 0;
+                        display: block;
+
+                        p{
+                            color: var(--additional-font, #6B6B6C);
+                            font-family: PT_Sans;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 150%; /* 21px */
+                            margin-bottom: 8px;
+                        }
+
+                        h4{
+                            color: var(--main-font, #363738);
+                            font-family: Exo2;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                }
+            }
+
+            .contact-right{
+                width: 794px;
+                height: 383px;
+                padding: 40px 48px;
+                border-radius: 5px;
+                background: #F9F9FB;
+
+                div{
+                    border-bottom: 1px solid #E9EAF2;
+                    display: flex;
+                    padding-bottom: 2px;
+                    margin-bottom: 32px;
+                    gap: 56px;
+                    p:first-child{
+                        width: 175px;
+                        color: var(--additional-font, #6B6B6C);
+                        font-family: PT_Sans;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 125%; /* 20px */
+                    }
+
+                    p:last-child{
+                        color: var(--main-font, #363738);
+                        font-family: Exo2;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 125%; /* 20px */
+                        width: 443px;
+                        height: 35px;
+                        flex-shrink: 0;
+                    }
+                }
+
+                div:nth-child(4){
+                    margin-bottom: 15px;
+                }
+
+                div:nth-child(5){
+                    margin-bottom: 0px;
+                    border: none;
+                }
+            }
+        }
+
+        .contact-bottom{
+            margin-top: 46px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #contact{
+        .container{
+            h2{
+                display: none;
+            }
+
+            .contact-wrapper{
+                flex-direction: column;
+            }
+
+            .contact-bottom{
+                img{
+                    width: 675px;
+                    height: 405px;
+                    margin: 0 auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    #contact{
+        .container{
+            h2{
+                display: block !important;
+                font-size: 28px;
+                margin-bottom: 56px;
+            }
+
+            .contact-wrapper{
+                .contact-right{
+                    padding: 24px;
+                    width: 345px;
+                    height: 568px;
+                    flex-shrink: 0;
+                    div{
+                        flex-direction: column;
+                        gap: 12px;
+                        p:last-child{
+                            width: 283px;
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+
+            .contact-bottom{
+                img{
+                    width: 327px;
+                    height: 196.2px;
+                }
+            }
+        }
+    }
+}

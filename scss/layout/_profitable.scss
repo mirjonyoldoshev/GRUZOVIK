@@ -1,0 +1,147 @@
+#profitable{
+    margin-top: 67px;
+    .container{
+        .profitable-wrapper--top{
+            position: relative;
+            margin-bottom: 60px;
+            overflow: hidden;
+            background-image: url(../../assets/images/profitable.jpg);
+            width: 100%;
+            height: 423px;
+        
+
+            h4{
+                top: 178px;
+                left: 90px;
+                position: absolute;
+                color: var(--white, #FFF);
+                font-family: Exo2;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 125%; /* 60px */
+                width: 362px;
+                height: 109px;
+                flex-shrink: 0;
+            }
+        }
+
+        .profitable-wrapper--bottom{
+            display: grid;
+            grid-template-columns: 450px 450px;
+            grid-template-rows: 90px 90px;
+            justify-content: center;
+            row-gap: 100px;
+            column-gap: 160px;
+
+            .card{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                div{
+                    h4{
+                        color: var(--main-font, #363738);
+                        font-family: Exo2;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 135%; /* 27px */
+                        margin-bottom: 13px;
+                    }
+
+                    p{
+                        color: var(--additional-font, #6B6B6C);
+                        font-family: PT_Sans;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%; /* 24px */
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #profitable{
+        .container{
+            .profitable-wrapper--top{
+                margin-bottom: 48px;
+                background-size: cover;
+                background-position: left center;
+                img{
+                    width: 500px;
+                    height: 443px;
+                }
+
+                h4{
+                    left: 55px;
+                    top: 112px;
+                    width: 288px;
+                    height: 165px;
+                    flex-shrink: 0;
+                    font-size: 44px;
+                }
+            }
+
+            .profitable-wrapper--bottom{
+                grid-template-columns: 500px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #profitable{
+        margin-top: 0;
+        .container{
+            .profitable-wrapper--top{
+                margin-top:80px;
+                height: 130px;
+                margin-bottom: 0;
+                background-image: none;
+                img{
+                    display: none;
+                }
+
+                h4{
+                    position: sticky;
+                    color: black;
+                    text-align: start;
+                    width: 345px;
+                    font-size: 28px;
+                    flex-shrink: 0;
+                }
+            }
+
+            .profitable-wrapper--bottom{
+                margin-top: 0 !important;
+                grid-template-columns: 300px !important;
+                grid-template-rows: 80px 80px 80px 80px !important;
+
+                .card{
+                    gap: 16px;
+                    img{
+                        width: 52px;
+                        height: 52px;
+                        flex-shrink: 0;
+                    }
+
+                    div{
+                        h4{
+                            font-size: 18px !important;
+                            margin-bottom: 12px !important;
+                        }
+
+                        p{
+                            font-size: 15px !important;
+                            width: 269px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
